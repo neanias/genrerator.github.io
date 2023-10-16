@@ -207,8 +207,30 @@ const genres = [
   "House",
   "Punk",
 ];
-const yearQualifiers = ["00s", "10s", "20s", "30s", "40s", "50s", "60s", "70s", "80s", "90s"];
-const genreModifiers = ["Post", "Hyper", "Psychedelic", "Chamber", "Baroque", "Afro", "Medieval", "Trap", "Underground", "Acid"];
+const yearQualifiers = [
+  "00s",
+  "10s",
+  "20s",
+  "30s",
+  "40s",
+  "50s",
+  "60s",
+  "70s",
+  "80s",
+  "90s",
+];
+const genreModifiers = [
+  "Post",
+  "Hyper",
+  "Psychedelic",
+  "Chamber",
+  "Baroque",
+  "Afro",
+  "Medieval",
+  "Trap",
+  "Underground",
+  "Acid",
+];
 window.sessionStorage.setItem("articleNumber", 1);
 
 function romanize(num) {
@@ -217,9 +239,36 @@ function romanize(num) {
   }
   const digits = String(+num).split("");
   const key = [
-    "","C","CC","CCC","CD","D","DC","DCC","DCCC","CM",
-    "","X","XX","XXX","XL","L","LX","LXX","LXXX","XC",
-    "","I","II","III","IV","V","VI","VII","VIII","IX"
+    "",
+    "C",
+    "CC",
+    "CCC",
+    "CD",
+    "D",
+    "DC",
+    "DCC",
+    "DCCC",
+    "CM",
+    "",
+    "X",
+    "XX",
+    "XXX",
+    "XL",
+    "L",
+    "LX",
+    "LXX",
+    "LXXX",
+    "XC",
+    "",
+    "I",
+    "II",
+    "III",
+    "IV",
+    "V",
+    "VI",
+    "VII",
+    "VIII",
+    "IX",
   ];
   let roman = "";
   let i = 3;
@@ -236,7 +285,7 @@ function getRandomInt(min, max) {
 }
 
 function shuffleArray(array) {
-  let shuffledArray = Array.from(array);
+  const shuffledArray = Array.from(array);
   for (let i = shuffledArray.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
     [shuffledArray[i], shuffledArray[j]] = [shuffledArray[j], shuffledArray[i]];
@@ -245,7 +294,9 @@ function shuffleArray(array) {
 }
 
 function generateTitle() {
-  const articleNumber = parseInt(window.sessionStorage.getItem("articleNumber"));
+  const articleNumber = parseInt(
+    window.sessionStorage.getItem("articleNumber"),
+  );
 
   let title = "";
 
@@ -258,7 +309,9 @@ function generateTitle() {
   title += `${country} `;
 
   const modifierCount = getRandomInt(1, 3);
-  const modifiers = shuffleArray(genreModifiers).slice(0, modifierCount).join("–");
+  const modifiers = shuffleArray(genreModifiers).slice(0, modifierCount).join(
+    "–",
+  );
   title += `${modifiers} `;
 
   const genreCount = getRandomInt(1, 2);
@@ -269,8 +322,10 @@ function generateTitle() {
     title += " Revival";
   }
 
-  let element = document.getElementById("quietus_article_name");
-  element.innerHTML = `Organic Intelligence ${romanize(articleNumber)}: ${title}`;
+  const element = document.getElementById("quietus_article_name");
+  element.innerHTML = `Organic Intelligence ${
+    romanize(articleNumber)
+  }: ${title}`;
 
   window.sessionStorage.setItem("articleNumber", articleNumber + 1);
 }
