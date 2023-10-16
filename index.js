@@ -300,9 +300,10 @@ function generateTitle() {
 
   let title = "";
 
-  if (Math.random() > 0.5) {
-    const year = yearQualifiers[Math.floor(Math.random() * yearQualifiers.length)];
-    title += `${year} `
+  if (Math.random() > 0.7) {
+    const year =
+      yearQualifiers[Math.floor(Math.random() * yearQualifiers.length)];
+    title += `${year} `;
   }
 
   const country = adjectivals[Math.floor(Math.random() * adjectivals.length)];
