@@ -1,0 +1,53 @@
+:root {
+  --text-color: #222;
+  --background-color: #FFF;
+  --link-color: #0069c2;
+  --font-weight: 400;
+  --font-weight-multiplier: 1;
+  --letter-spacing: 0;
+}
+
+strong, b, h1, h2, h3, h4, h5, h6 {
+  --font-weight: 700;
+}
+
+* {
+  font-weight: calc(var(--font-weight, 400) * var(--font-weight-multiplier, 1));
+  letter-spacing: var(--letter-spacing, 0);
+}
+
+body {
+  font-family: "Open Sans", Arial;
+  margin: 2em auto;
+  max-width: 800px;
+  line-height: 1.4;
+  font-size: 16px;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  padding: 1em;
+  text-align: justify;
+  hyphens: auto;
+}
+
+h1, h2, h3 {
+  line-height: 1.2;
+}
+
+a {
+  color: var(--link-color);
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+@media screen and (prefers-color-scheme: dark) {
+  :root {
+    --text-color: #fff;
+    --background-color: #222;
+    --link-color: #8cb4ff;
+    --font-weight-multiplier: 0.85;
+    --letter-spacing: 0.02ch;
+  }
+}
+
