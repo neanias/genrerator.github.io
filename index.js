@@ -348,6 +348,7 @@ const genreModifiers = [
   "Gothic",
   "Hard",
   "Hardcore",
+  "Honky-tonk",
   "Hyper",
   "Indie",
   "Industrial",
