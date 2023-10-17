@@ -223,6 +223,7 @@ const genres = [
   "Punk",
   "Rap",
   "Reggae",
+  "R&amp;B",
   "Rock",
   "Rocksteady",
   "Ska",
