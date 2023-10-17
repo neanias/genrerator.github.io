@@ -378,6 +378,13 @@ const genreModifiers = [
   "Underground",
   "Urban",
 ];
+
+const suffixes = [
+  "core",
+  "tronica",
+  "wave",
+];
+
 window.sessionStorage.setItem("articleNumber", 1);
 
 function romanize(num) {
@@ -465,6 +472,11 @@ function generateTitle() {
   const genreCount = getRandomInt(1, 2);
   const titleGenres = shuffleArray(genres).slice(0, genreCount).join(" ");
   title += `${titleGenres}`;
+
+  if (Math.random() > 0.7) {
+    const coinFlip = Math.random() < 0.5 ? 0 : 1;
+    title += `-${suffixes[coinFlip]}`;
+  }
 
   if (Math.random() > 0.5) {
     title += " Revival";
