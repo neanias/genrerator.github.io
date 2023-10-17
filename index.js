@@ -480,7 +480,7 @@ function generateTitle() {
     title += `-${suffixes[coinFlip]}`;
   }
 
-  if (Math.random() > 0.5) {
+  if (Math.random() > 0.7) {
     title += " Revival";
   }
 
