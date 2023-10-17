@@ -341,6 +341,7 @@ const genreModifiers = [
   "Crossover",
   "DIY",
   "Dark",
+  "Desert",
   "Electro",
   "Euro",
   "Experimental",
