@@ -456,7 +456,7 @@ function generateTitle() {
   const country = adjectivals[Math.floor(Math.random() * adjectivals.length)];
   title += `${country} `;
 
-  const modifierCount = getRandomInt(1, 3);
+  const modifierCount = getRandomInt(1, 2);
   const modifiers = shuffleArray(genreModifiers).slice(0, modifierCount).join(
     "–",
   );
