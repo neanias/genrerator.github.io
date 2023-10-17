@@ -8,6 +8,7 @@ const adjectivals = [
   "Amsterdam",
   "Andorran",
   "Angolan",
+  "Appalachian",
   "Argentine",
   "Armenian",
   "Aromanian",
@@ -377,6 +378,7 @@ const genreModifiers = [
   "Tropical",
   "Underground",
   "Urban",
+  "Witch",
 ];
 
 const suffixes = [
