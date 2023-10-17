@@ -298,6 +298,7 @@ const genres = [
   "Musique Concrète",
   "Noise",
   "Non-Music",
+  "Polka",
   "Pop",
   "Punk",
   "R&amp;B",
