@@ -204,6 +204,7 @@ const genres = [
   "Classical",
   "Country",
   "Dance Music",
+  "Disco",
   "Drum and Bass",
   "Dub",
   "Electronic",
