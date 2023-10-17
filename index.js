@@ -218,6 +218,7 @@ const genres = [
   "House",
   "Jazz",
   "Latin",
+  "Metal",
   "Non Music",
   "Pop",
   "Punk",
@@ -257,7 +258,9 @@ const genreModifiers = [
   "Medieval",
   "New Age",
   "Post",
+  "Power",
   "Psychedelic",
+  "Queer",
   "Trap",
   "Underground",
 ];
