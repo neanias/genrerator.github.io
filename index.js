@@ -316,7 +316,7 @@ function generateTitle() {
   title += `${modifiers} `;
 
   const genreCount = getRandomInt(1, 2);
-  const titleGenres = shuffleArray(genres).slice(0, genreCount).join("–");
+  const titleGenres = shuffleArray(genres).slice(0, genreCount).join(" ");
   title += `${titleGenres}`;
 
   if (Math.random() > 0.5) {
