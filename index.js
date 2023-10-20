@@ -383,6 +383,7 @@ const genreModifiers = [
   "Trip",
   "Tropical",
   "Underground",
+  "Upbeat",
   "Urban",
   "Witch",
 ];
