@@ -237,6 +237,7 @@ const adjectivals = [
   "Thai",
   "Tibetan",
   "Tobagonian",
+  "Transatlantic",
   "Trinidadian",
   "Tunisian",
   "Turkish Cypriot",
